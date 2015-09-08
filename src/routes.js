@@ -7,9 +7,9 @@ import About from './about/about';
 export default function routes(handler) {
   return (
   <Route handler={handler}>
-    <Route path='home'  handler={Home} />
-    <Route path='articles'  handler={Articles} />
-    <Route path='about'  handler={About} />
+    <Route path='home' handler={Home} />
+    <Route path='articles' handler={Articles} />
+    <Route path='about' handler={About} />
 
     <DefaultRoute handler={Home} />
   </Route>
