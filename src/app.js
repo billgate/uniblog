@@ -24,6 +24,4 @@ Router.run(routes(App), Router.HistoryLocation, (Root) => {
   React.render(<Root />, document.getElementById('app'));
 });
 
-
-
 export default App;

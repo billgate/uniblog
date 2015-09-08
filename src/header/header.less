@@ -23,6 +23,10 @@
     text-shadow: 1px 1px 1px #292929;
   }
 
+  a {
+    text-decoration: none;
+  }
+  
   .motto {
     font-family: 'DejaVu Sans Mono', 'Monospace';
     font-weight: 300;
@@ -40,29 +44,15 @@
   .header-top-item {
 
   }
-
-  .navigation {
-    a {
-      color: #E2E2E2;
-      margin: 0px 5px;
-      padding: 3px;
-      border-bottom: 1px solid;
-    }
-
-    .selected {
-      text-shadow: 1px 1px 0px #484848;
-    }
-  }
 }
 
-.navigation {
+.site-header nav {
   a {
-    text-decoration: none;
+    color: #E6E6E6;
 
-  }
-
-  .selected {
-    //font-weight: bold;
-    font-weight: normal;
+    &.active {
+      color: #eee;
+      text-shadow: 0px 0px 2px #fff;
+    }
   }
 }

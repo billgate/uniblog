@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.less';
 import Navigation from './navigation';
+import {Link} from 'react-router';
 
 let binary = Number(420).toString(2);
 let numberOfZeroes = 16 - binary.length;
@@ -17,7 +18,9 @@ let Header = React.createClass({
     return (
       <header className='site-header'>
         <div className='header-top'>
-          <h1 className='header-top-item'>Michal's blog</h1>
+          <Link to='home'>
+            <h1 className='header-top-item'>Michal's blog</h1>
+          </Link>
           <Navigation items={headerLinks} />
         </div>
         <h2 className='page-title'>Once upon a time. Michals journey</h2>
