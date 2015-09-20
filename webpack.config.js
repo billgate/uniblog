@@ -4,7 +4,7 @@ var path = require('path');
 
 module.exports = {
   devtool: 'source-map',
-  entry: ['webpack/hot/dev-server', './src/app'],
+  entry: ['webpack/hot/dev-server', './src/index'],
   output: {
       path: path.join(__dirname, 'generated'),
       filename: 'bundle.js',
@@ -20,7 +20,7 @@ module.exports = {
       { test: /\.less$/, loader: 'style!css!less' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&minetype=application/font-woff' },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' },
-      { test: /\.js$/, exclude: /(node_modules)/, loaders: ['react-hot' , 'babel']}
+      { test: /\.js$/, exclude: /(node_modules)/, loader: 'babel'}
     ]
   }
 };
