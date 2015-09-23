@@ -9,8 +9,9 @@ let zeroes = '0'.repeat(numberOfZeroes);
 export const fourTwenty = zeroes + binary;
 
 export const headerLinks = [
-  { path: '/articles', label: 'Articles'},
-  { path: 'https://github.com/michalvankodev', label: 'GitHub'}
+  { path: '/articles', label: 'Articles' },
+  { path: '/about', label: 'About me' },
+  { path: 'https://github.com/michalvankodev', label: 'GitHub' }
 ];
 
 let Header = () => (
