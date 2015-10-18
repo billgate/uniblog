@@ -11,7 +11,7 @@ let configs = {
   production
 };
 
-let ENV = process.env.NODE_ENV;
+let ENV = process.env.NODE_ENV || 'development';
 
 let mainConfig = {
 // MongoDB connection options
